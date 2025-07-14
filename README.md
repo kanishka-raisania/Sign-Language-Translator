@@ -1,59 +1,82 @@
-# Sign Language Translator
+# 🤟 Sign Language Translator
 
-### Translate sign language to text with camera and python (GUI and ML) 📷🤖📝
+**Translate Indian Sign Language (ISL) to text using real-time camera input, gesture detection, and machine learning.**  
+📷🤖📝 Built with Python, Mediapipe, TensorFlow, and CustomTkinter for an interactive GUI.
 
-https://github.com/meet244/Sign-Language-Translator/assets/83262693/8020b9f0-6c23-4af4-a43c-bae3d59a8899
+---
+![SharedScreenshot](https://github.com/user-attachments/assets/0fd6decf-a1e7-4ecd-a096-450f726d8b3d)
+![Screenshot 2025-07-14 095917](https://github.com/user-attachments/assets/7e737a00-a281-41eb-bea7-76653a016e96)
+---
 
-## Problem Statement 🧩
+## 🧩 Problem Statement
 
-Develop an innovative system that utilizes camera technology in web and mobile applications to translate sign language gestures into text. The primary goal is to enhance communication accessibility for the Deaf and Hard of Hearing community by providing a real-time sign language-to-text translation solution. 🌐🤟📱
+Develop an innovative system that utilizes camera technology in web and mobile applications to translate sign language gestures into text. The primary goal is to enhance communication accessibility for the **Deaf and Hard of Hearing** community by providing a **real-time sign language-to-text** translation solution. 🌐🤟📱
 
-## Key Features 🚀
+---
 
-1. **Real-Time Gesture Recognition:** Advanced algorithms for recognizing sign language gestures in real-time through the device's camera. 📹👋
+## 🚀 Key Features
 
-2. **Text Translation:** Accurate translation mechanism to convert recognized gestures into text. 📝🔄
+- 🎥 **Real-Time Gesture Recognition**  
+  Tracks hand gestures using a live webcam feed via **Mediapipe**.
 
-3. **Accessible Interface:** User-friendly interface for both sign language users and those who rely on the translated text. 🖥️👨‍👩‍🦳
+- 🧠 **ML-Powered Text Translation**  
+  Trained using **TensorFlow** to recognize and interpret a wide range of signs.
 
-4. **Multiple Sign Languages:** Support for a variety of sign languages to cater to a diverse user base. 🌍🤟
+- 🖼️ **Accessible & Custom GUI**  
+  Built using **CustomTkinter** for modern styling and user-friendly experience.
 
-5. **Customizable Settings:** Allow users to personalize the system's settings and preferences. ⚙️🛠️
+- 🌍 **Multi-language Sign Support**  
+  Easily expandable to include signs from other sign languages globally.
 
-## Solution Overview 🌟
+- ⚙️ **Customizable Settings**  
+  Users can adjust camera, gestures, and output settings for personalized use.
 
-We first understood how sign language functions and what the signs for India. Here's the signs we made this project for and you can try this out : 
+---
 
-![signs](https://github.com/meet244/Sign-Language-Translator/assets/83262693/30087850-85a3-4850-bdc4-fbe3daf87cc6)
+## 🌟 Solution Overview
 
-We solved this problem by implementing a comprehensive system that combines customtkinter (an enhanced version of tkinter), Mediapipe for hand sign recognition, and TensorFlow for machine learning to recognize signs. Here's a more detailed breakdown of our solution:
+We solved the problem by implementing a comprehensive system that integrates:
 
-- **Real-Time Gesture Recognition:** We leveraged Mediapipe's advanced hand tracking capabilities to recognize sign language gestures in real-time through the device's camera. This allowed us to precisely track hand movements and gestures. 👐🕐
+- **MediaPipe** for accurate and fast **hand keypoint tracking**
+- **TensorFlow** to train and run a **gesture classification model**
+- **CustomTkinter** to design a smooth, intuitive **GUI interface**
 
-- **Text Translation:** To convert recognized sign language gestures into text, we utilized TensorFlow for machine learning. Our machine learning model was trained to understand a wide range of sign language signs, ensuring high accuracy and reliability in translation. 🤖💬
+---
 
-- **Accessible Interface:** We designed a user-friendly interface using customtkinter, which offers enhanced customization and a smoother user experience. Our interface facilitates seamless communication for both sign language users and those who rely on the translated text. 🖼️🤝
+### 🧠 How It Works
 
+1. **Data Collection**  
+   - Custom dataset created by capturing hand keypoints using a live webcam.
+   - Labels saved per gesture.
 
+2. **Model Training**  
+   - A deep learning model is trained using **hand landmark sequences** to learn gestures.
+
+3. **Live Prediction**  
+   - During runtime, Mediapipe tracks gestures, and the model classifies them.
+   - Translated text is displayed on the screen via GUI.
+
+---
+
+## 🧪 Supported Signs
+
+We trained the system to recognize commonly used ISL gestures like:
+- Alphabets: A–Z
+- Words: Hello, Yes, No, Thank You, Good, Bad, I Love You, etc.
+
+<img width="267" height="189" alt="image" src="https://github.com/user-attachments/assets/b6b3bd0a-bfc3-4958-a872-906ff87d8144" />
+
+---
 ## Installation ⚙️
-
-```shell
-# Clone the repository
-git clone https://github.com/meet244/Sign-Language-Translator.git
+```bash
+git clone https://github.com/kanishka-raisania/Sign-Language-Translator.git
 cd Sign-Language-Translator
-
-# Install modules
 pip install -r requirements.txt
-
-# Start the application
 python app.py
-```
 
 ## Contributing 🤝
+Contributions are welcome! Fork the repo, make changes, and open a pull request.
 
-If you'd like to contribute to this project, please follow guidelines. 🙌
-
-## License 📜
-
-This project is licensed under the [MIT License](LICENSE). 📄
-
+## Author 👩‍💻
+**Kanishka Raisania**  
+B.Tech CSE @ NSUT  
